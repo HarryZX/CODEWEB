@@ -1,0 +1,243 @@
+*{
+	font-family: 'Gayathri', sans-serif;
+	/*font-family: 'Fira Code', monospace;*/
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+}
+
+a{
+	text-decoration: none;
+}
+
+li{
+	list-style: none;
+}
+
+/* Menu */
+.cntMenu{
+	padding: 10px;
+	margin: 0px;
+	background-color: rgba(61,210,255,1);
+	flex: 1 1 auto;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.iconoMenu{
+	margin: 0px;
+	padding: 0px;
+	width: 30%;
+}
+
+.cntLogo{
+	padding: 0px;
+	margin: 0px;
+	/*color: rgb(255,255,255);
+	font-size: 30px;*/
+	width: 20%;
+}
+
+.cntLogo img{
+	padding: 0px 0px 0px 0px;
+	margin: 0px;
+	width: 72%;
+}
+
+.cntCat{
+	padding: 0px;
+	margin: 0px;
+	width: 80%;
+}
+
+.cntCat ul{
+	margin: 0px;
+	padding: 0px;
+	flex: 1 1 auto;
+	display: flex;
+	flex-flow: row nowrap;
+	width: 100%;
+	justify-content: space-around;
+}
+
+.cntCat ul li{
+	margin: 0px;
+	padding: 5px;
+}
+
+.cntCat ul li a{
+	font-size: 20px;
+	color: rgb(0,0,0);
+	transition: 0.4s;
+}
+
+.cntCat ul li a:hover{
+	transition: 0.2s;
+	color: rgb(255,255,255);
+}
+
+.cntImagen{
+	flex: 1 1 auto;
+	flex-flow: column;
+	display: flex;
+}
+
+.cntImagen img{
+	width: 100%;
+}
+
+/* Entradas */
+.tituloPopulares{
+	padding: 10px 0px 0px 0px;
+	margin: 0px;
+	width: 100%;
+	font-size: 30px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.cntEntradas{
+	padding: 5px 0px 5px 0px;
+	margin: 0px;
+	flex: 1 1 auto;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+}
+
+.entrada{
+	padding: 5px 7px 10px 7px;
+	margin: 0px;
+	flex: 1 1 auto;
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+.cntImgMuestra{
+	padding: 0px;
+	margin: 0px;
+}
+
+.cntImgMuestra img{
+	width: 100%;
+}
+
+.titulo{
+	padding: 0px;
+	margin: 0px;
+	font-size: 30px;
+	font-weight: bold;
+	color: rgb(0,0,0);
+}
+
+.descripcion{
+	padding-top: 0px;
+	margin-top: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+.fechaPublicado{
+	font-size: 14px;
+	font-style: italic;
+	color: rgb(111,113,12);
+}
+
+/* Categorías */
+.tituloCategorias{
+	padding: 5px 0px 10px 0px;
+	margin: 0px;
+	width: 100%;
+	font-size: 30px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.cntCategorias{
+	margin: 0px 2px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	flex: 1 1 auto;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+
+.categoria{
+	margin: 2px 5px 5px 5px;
+	padding: 0px;
+	border: 1px solid rgb(44,44,44);
+	border-radius: 3px;
+	width: 97%;
+	text-align: center;
+}
+
+.categoria div{
+	margin: 0px;
+	padding: 5px 5px 5px 5px;
+	color: rgb(0,0,0);
+}
+
+/* Pie de página*/
+.piePagina{
+	margin: 0px;
+	padding: 0px;
+	background-color: rgba(61,210,255,1);
+	flex: 1 1 auto;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.enlacesPie li{
+	padding: 5px 0px 5px 0px;
+}
+
+.enlacesPie a{
+	color: rgb(0,0,0);
+	transition: 0.4s;
+}
+
+.enlacesPie a:hover{
+	transition: 0.2s;
+	color: rgb(255,255,255);
+}
+
+/* RESPONSIVE */
+
+@media all and (max-width: 800px){
+	.cntLogo{
+		flex-direction: column;
+		width: 50%;
+	}
+
+	.cntCat{
+		flex-direction: column;
+		width: 50%;
+		text-align: right;
+	}
+	
+	.cntCat ul{
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.cntEntradas{
+		flex-direction: column;
+	}
+
+	.cntCategorias{
+		flex-direction: column;
+	}
+}
+
+@media all and (max-width: 800px){
+	.cntLogo img{
+		padding: 3px 0px 0px 0px;
+		margin: 6px 0px 0px 0px;
+		width: 98%;
+	}
+}
