@@ -180,7 +180,375 @@ li{
 	color: rgb(0,0,0);
 }
 
-/* Pie de página*/
+/* Formularios de datos */
+.contenedorFormulario{
+	margin: 10px 0px 10px 0px;
+	padding: 10px 0px 10px 0px;
+	flex: 1 1 auto;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+}
+
+.sesionFormulario{
+	margin: 5px 0px 5px 0px;
+	padding: 5px 10px 5px 10px;
+	flex: 1 1 auto;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	text-align: center;
+	border: 1px solid rgb(145,145,145);
+	border-radius: 5px;
+}
+
+.tituloFormulario{
+	margin: 5px;
+	padding: 10px;
+	font-size: 30px;
+}
+
+input[type="text"]{
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid rgb(145,145,145);
+	border-radius: 5px;
+	font-size: 17px;
+}
+
+input[type="password"]{
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid rgb(145,145,145);
+	border-radius: 5px;
+	font-size: 17px;
+}
+
+input[type="submit"]{
+	margin: 10px 10px 20px 10px;
+	padding: 10px;
+	font-size: 17px;
+	width: 91%;
+	background-color: rgba(61,210,255,1);
+	color: rgb(255,255,255);
+	border: 1px solid rgb(145,145,145);
+	border-radius: 5px;
+	transition: 0.4s;
+}
+
+input[type="submit"]:hover{
+	transition: 0.3s;
+	color: rgb(0,0,0);
+	background-color: rgba(61,210,255,0.5);
+	cursor: pointer;
+}
+
+/* Estilos para la vista de cada publicación */
+.contenido{
+	flex: 1 1 auto;
+	display: flex;
+	flex-flow: column nowrap;
+	padding: 0px;
+	margin: 0px;
+}
+
+.tituloPublicado{
+	flex: 1 1 auto;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	padding: 0px;
+	margin: 0px;
+}
+
+.tituloPublicado p{
+	padding: 10px 0px 7px 0px;
+	margin: 0px;
+	font-size: 35px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.fechaPublicado{
+	padding: 7px 0px 7px 0px;
+	margin: 0px;
+	text-align: center;
+}
+
+.cntImgPublicado{
+	margin: 5px;
+	padding: 5px;
+	flex: 1 1 auto;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+}
+
+.cntImgPublicado img{
+	width: 85%;
+}
+
+.descripcionPublicado{
+	padding: 0px;
+	margin: 0px;
+	flex: 1 1 auto;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+
+.descripcionPublicado p{
+	width: 80%;
+}
+
+/* Estilos para el Administrador */
+.contenedorAdministrador{
+	padding: 0px;
+	margin: 0px;
+	flex: 1 1 auto;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.menuLateral{
+	padding: 0px;
+	margin: 0px;
+	width: 20%;
+	flex: 1 1 auto;
+	display: flex;
+	flex-flow: column;
+}
+
+.listaLateral{
+	padding: 0px;
+	margin: 0px;
+}
+
+.listaLateral li{
+	padding: 5px;
+	margin: 7px;
+	color: rgb(0,0,0);
+}
+
+.listaLateral li:hover{
+	cursor: pointer;
+}
+
+.seleccion{
+	background-color: rgba(61,210,255,1);
+	width: 100%;
+}
+
+/* Estilos para el boton lateral */
+.contenedorBoton{
+	margin: 0px;
+	padding: 0px;
+	position: fixed;
+}
+
+.contenedorBoton:hover{
+	cursor: pointer;
+}
+
+.iconoBoton{
+	width: 50%;
+	background-color: rgba(61,210,255,1);
+	border-radius: 50px;
+}
+
+.datosAdministrador{
+	padding: 0px;
+	margin: 0px;
+	width: 80%;
+	flex: 1 1 auto;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+
+/* ESTILO PARA EL ÁREA DE LOS DATOS DEL USUARIO */
+.tituloArea{
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.tituloArea p{
+	border-bottom: 3px solid rgba(61,210,255,1);
+	text-align: center;
+}
+
+.datosPrincipal{
+	flex: 1 1 auto;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+
+.imagenAdmin{
+	border: 2px solid rgba(61,210,255,1);
+	border-radius: 5px;
+}
+
+.nombreAdmin{
+	flex: 1 1 auto;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.nombreAdmin p{
+	padding: 0px 5px 0px 5px;
+	margin: 10px 0px 10px 0px;
+	font-size: 20px;
+}
+
+/* ESTILO PARA EL ÁREA DE LA TABLA DE DATOS GENERAL */
+.datosGeneral{
+	flex: 1 1 auto;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+
+.tituloTabla{
+	text-align: center;
+	font-size: 25px;
+}
+
+.tituloTabla p{
+	border-bottom: 2px solid rgba(61,210,255,1);
+}
+
+.tablaGeneral{
+	flex: 1 1 auto;
+	display: flex;
+	flex-flow: row wrap;
+	border-bottom: 1px solid rgba(61,210,255,1);
+	border-top: 1px solid rgba(61,210,255,1);
+	border-left: 1px solid rgba(61,210,255,1);
+}
+
+.columna{
+	padding: 5px;
+	margin: 0px;
+	border-right: 1px solid rgba(61,210,255,1);
+}
+
+.celdaTitulo{
+	border-bottom: 1px solid rgba(61,210,255,1);
+}
+
+.celdaDato{
+	padding: 5px 0px 0px 0px;
+	margin: 0px;
+	text-align: right;
+}
+
+/* ESTILO PARA EL ÁREA DE LA VISTA DE LAS ENTRADAS */
+.datosEntradas{
+	flex: 1 1 auto;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+
+.tituloListaEntrada{
+	text-align: center;
+	font-size: 25px;
+}
+
+.tituloListaEntrada p{
+	border-bottom: 2px solid rgba(61,210,255,1);
+}
+
+.listaEntradas{
+	padding: 5px;
+	margin: 0px;
+	flex: 1 1 auto;
+	display: flex;
+	flex-flow: column;
+}
+
+.entradaVista{
+	border: 1px solid rgba(61,210,255,1);
+	border-radius: 5px;
+	padding: 5px;
+	margin: 5px;
+	flex: 1 1 auto;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+}
+
+.entradaVista img{
+	width: 20%;
+}
+
+.entradaVista p{
+	padding: 0px 0px 0px 15px;
+	margin: 0px;
+}
+
+/* ESTILO PARA EL ÁREA DE LA VISTA DE LAS ENTRADAS */
+.datosComentarios{
+	flex: 1 1 auto;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+
+.tituloListaComentarios{
+	text-align: center;
+	font-size: 25px;
+}
+
+.tituloListaComentarios p{
+	border-bottom: 2px solid rgba(61,210,255,1);
+}
+
+.listaComentarios{
+	padding: 5px;
+	margin: 0px;
+	flex: 1 1 auto;
+	display: flex;
+	flex-flow: column;
+}
+
+.comentarioVista{
+	border: 1px solid rgba(61,210,255,1);
+	border-radius: 5px;
+	padding: 5px;
+	margin: 5px;
+	flex: 1 1 auto;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.comentarioVista img{
+	width: 30%;
+}
+
+.comentarioContenido{
+	flex: 1 1 auto;
+	display: flex;
+	flex-flow: column;
+	padding: 0px 5px 0px 5px;
+	margin: 0px;
+}
+
+.comentarioContenido p{
+	margin: 5px 0px 5px 0px;
+}
+
+.nombreUsuario{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.comentario{
+	font-size: 15px;
+}
+
+/* Pie de página */
 .piePagina{
 	margin: 0px;
 	padding: 0px;

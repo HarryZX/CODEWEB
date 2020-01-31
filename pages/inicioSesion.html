@@ -14,34 +14,18 @@
 	<title>CO.DE.</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body onresize="redimensionar()">
+<body>
 	<header class="cntMenu">
 		<div class="cntLogo"><a href="../index.html"><img src="../icons/CODE_logo.png"></a></div>
-		<div class="cntCat" id="menu">
-			<a href="#" id="presioname">
-				<img src="../icons/menu_icon.png" class="iconoMenu" id="iconoMenu">
-			</a>
-			<ul id="lista">
-				<li><a href="#">HTML5</a></li>
-				<li><a href="#">CSS</a></li>
-				<li><a href="#">JavaScript</a></li>
-				<li><a href="#">PHP</a></li>
-				<li><a href="#">Blog</a></li>
-			</ul>
-		</div>
 	</header>
 
-	<div class="contenido">
-		<div class="tituloPublicado">
-			<p>Programar</p>
-		</div>
-		<p class="fechaPublicado">20-01-2020</p>
-		<div class="cntImgPublicado">
-			<img src="../imgs/programar.png" class="imagenMuestra">
-		</div>
-		<div class="descripcionPublicado">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi recusandae harum fuga, fugit itaque, illum. Nihil illum expedita labore sunt. Blanditiis corrupti, odio rem adipisci expedita laboriosam magni necessitatibus nihil.</p>
-		</div>
+	<div class="contenedorFormulario">
+		<form action="POST" class="sesionFormulario">
+			<p class="tituloFormulario">Login</p>
+			<input type="text" name="usuario">
+			<input type="password" name="credencial">
+			<input type="submit" name="login" value="Login">
+		</form>
 	</div>
 
 	<!-- PIE DE PÁGINA -->

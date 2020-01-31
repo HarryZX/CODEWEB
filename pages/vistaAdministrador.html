@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Fira+Code|Gayathri:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/menuPrincipal.css">
+	<link rel="stylesheet" href="../css/jquery-ui.css">
+	<link rel="stylesheet" href="../css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../css/jquery-ui.structure.css">
+	<link rel="stylesheet" href="../css/jquery-ui.structure.min.css">
+	<link rel="stylesheet" href="../css/jquery-ui.theme.css">
+	<link rel="stylesheet" href="../css/jquery-ui.theme.min.css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CO.DE.</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body onresize="redimensionar()">
+	<header class="cntMenu">
+		<div class="cntLogo"><a href="../index.html"><img src="../icons/CODE_logo.png"></a></div>
+		<div class="cntCat" id="menu">
+			<a href="#" id="presioname">
+				<img src="../icons/menu_icon.png" class="iconoMenu" id="iconoMenu">
+			</a>
+			<ul id="lista">
+				<li><a href="#">HTML5</a></li>
+				<li><a href="#">CSS</a></li>
+				<li><a href="#">JavaScript</a></li>
+				<li><a href="#">PHP</a></li>
+				<li><a href="#">Blog</a></li>
+			</ul>
+		</div>
+	</header>
+
+
+	<div class="contenedorAdministrador">
+
+		<!-- VISTA DEL MENÚ LATERAL -->
+		<div class="menuLateral" id="mLateral">
+			<nav class="listaLateral">
+				<ul>
+					<li class="seleccion">Datos del Administrador</li>
+					<li>Entradas</li>
+					<li>Comentarios</li>
+					<li>Estadísticas</li>
+				</ul>
+			</nav>
+		</div>
+
+		<!-- BOTON PARA MENU LATERAL -->
+		<div class="contenedorBoton" id="boton">
+			<img src="../icons/abre_menu.png" class="iconoBoton" id="iconoBoton">
+		</div>
+
+		<!-- VISTA DE DATOS DEL ADMINISTRADOR -->
+		<div class="datosAdministrador">
+
+			<!-- TITULO DEL AREA ELEGIDA -->
+			<div class="tituloArea">
+				<p>Datos del Administrador</p>
+			</div>
+
+			<!-- CONTENEDOR DE LOS DATOS -->
+			<div class="datosPrincipal">
+				<div class="imagenAdmin">
+					<img src="../icons/user_icon.png">
+				</div>
+				<div class="nombreAdmin">
+					<p>Harry</p>
+					<P>ZX</P>
+				</div>
+			</div>
+
+			<!-- VISTA DE TABLA DE DATOS GENERAL -->
+			<div class="datosGeneral">
+				<!-- TITULO -->
+				<div class="tituloTabla">
+					<p>Resumen general</p>
+				</div>
+
+				<!-- DATOS -->
+				<div class="tablaGeneral">
+					<div class="columna">
+						<div class="celdaTitulo">Titulo</div>
+						<div class="celdaDato">1</div>
+					</div>
+					<div class="columna">
+						<div class="celdaTitulo">Titulo</div>
+						<div class="celdaDato">2</div>
+					</div>
+					<div class="columna">
+						<div class="celdaTitulo">Titulo</div>
+						<div class="celdaDato">3</div>
+					</div>
+					<div class="columna">
+						<div class="celdaTitulo">Titulo</div>
+						<div class="celdaDato">4</div>
+					</div>
+					<div class="columna">
+						<div class="celdaTitulo">Titulo</div>
+						<div class="celdaDato">5</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- VISTA DE LAS ENTRADAS -->
+			<div class="datosEntradas">
+				<!-- TITULO -->
+				<div class="tituloListaEntrada">
+					<p>Entradas populares</p>
+				</div>
+
+				<!-- DATOS -->
+				<div class="listaEntradas">
+					<div class="entradaVista">
+						<img src="../imgs/programar.png">
+						<p>Programación</p>
+					</div>
+					<div class="entradaVista">
+						<img src="../imgs/domotica.jpg">
+						<p>Domotica</p>
+					</div>
+					<div class="entradaVista">
+						<img src="../imgs/hackers.jpg">
+						<p>Hacking ético</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- VISTAS DE LOS COMENTRIOS -->
+			<div class="datosComentarios">
+				<!-- TITULO -->
+				<div class="tituloListaComentarios">
+					<p>Comentarios</p>
+				</div>
+
+				<!-- DATOS -->
+				<div class="listaComentarios">
+					<div class="comentarioVista">
+						<img src="../icons/user_icon2.png">
+						<div class="comentarioContenido">
+							<p class="nombreUsuario">Juan Perez</p>
+							<p class="comentario">Me encantó la entrada</p>
+						</div>
+					</div>
+					<div class="comentarioVista">
+						<img src="../icons/user_icon2.png">
+						<div class="comentarioContenido">
+							<p class="nombreUsuario">Juan Perez</p>
+							<p class="comentario">Me encantó la entrada</p>
+						</div>
+					</div>
+					<div class="comentarioVista">
+						<img src="../icons/user_icon2.png">
+						<div class="comentarioContenido">
+							<p class="nombreUsuario">Juan Perez</p>
+							<p class="comentario">Me encantó la entrada</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- PIE DE PÁGINA -->
+	<footer class="piePagina">
+		<div class="enlacesPie">
+			<ul>
+				<li><a href="#">twitter</a></li>
+				<li><a href="#">facebook</a></li>
+				<li><a href="#">instagram</a></li>
+			</ul>
+		</div>
+		<div class="enlacesPie">
+			<ul>
+				<li><a href="#">Consejos de diseño web</a></li>
+				<li><a href="#">Principios de programación</a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<!-- SCRIPTS -->
+
+	<!-- JQUERY -->
+	<script src="../js/jquery.js"></script>
+	<script src="../js/jquery-3.4.1.js"></script>
+	<script src="../js/query-ui.js"></script>
+	<script src="../js/query-ui.min.js"></script>
+	<!-- MIS SCRIPTS -->
+	<script src="../js/componentes.js"></script>
+</body>
+</html>

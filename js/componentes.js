@@ -12,9 +12,17 @@ $(window).on("load", function(){
 	if (ancho <= 783) {
 		$("#lista").hide();
 		$("#iconoMenu").show();
+		/* Muestra y oculta el menú lateral de la vista del Administrador */
+		$("#mLateral").hide();
+		/* Muestra y oculta el botón para el menú lateral */
+		$("#boton").show();
 	}else if (ancho > 783) {
 		$("#lista").show();
 		$("#iconoMenu").hide();
+		/* Muestra y oculta el menú lateral de la vista del Administrador */
+		$("#mLateral").show();
+		/* Muestra y oculta el botón para el menú lateral */
+		$("#boton").hide();
 	}
 });
 
@@ -26,15 +34,32 @@ function redimensionar(){
 	if (dim <= 783) {
 		$("#lista").hide();
 		$("#iconoMenu").show();
+		/* Muestra y oculta el menú lateral de la vista del Administrador */
+		$("#mLateral").hide("fold");
+		/* Muestra y oculta el botón para el menú lateral */
+		$("#boton").show();
 	}else if(dim > 783) {
 		$("#lista").show();
 		$("#iconoMenu").hide();
+		/* Muestra y oculta el menú lateral de la vista del Administrador */
+		$("#mLateral").show("fold");
+		/* Muestra y oculta el botón para el menú lateral */
+		$("#boton").hide("fold");
 	}
 }
 
 /*
-* Muestra u oculta el menú al momento de presionar el icono del mismo.
+* Muestra u oculta el menú de cabecera al momento de presionar el icono del mismo.
 */
 $("#presioname").click(function(){
 	$("#lista").toggle("fold");
+});
+
+
+/* Mostrar el menú lateral del Administrador al presionar el boton */
+$("#boton").click(function(){
+	var newStyle = {
+		position: "fixed"
+	};
+	$("#mLateral").toggle("blind").css(newStyle);
 });
