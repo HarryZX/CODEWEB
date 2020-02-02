@@ -58,8 +58,5 @@ $("#presioname").click(function(){
 
 /* Mostrar el menú lateral del Administrador al presionar el boton */
 $("#boton").click(function(){
-	var newStyle = {
-		position: "fixed"
-	};
-	$("#mLateral").toggle("blind").css(newStyle);
+	$("#mLateral").toggle("blind");
 });

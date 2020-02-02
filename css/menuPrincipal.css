@@ -341,7 +341,7 @@ input[type="submit"]:hover{
 
 /* Estilos para el boton lateral */
 .contenedorBoton{
-	margin: 0px;
+	margin: 5px;
 	padding: 0px;
 	position: fixed;
 }
@@ -351,7 +351,7 @@ input[type="submit"]:hover{
 }
 
 .iconoBoton{
-	width: 50%;
+	width: 100%;
 	background-color: rgba(61,210,255,1);
 	border-radius: 50px;
 }
@@ -548,6 +548,76 @@ input[type="submit"]:hover{
 	font-size: 15px;
 }
 
+/* Estilo para el editor de las entradas al blog CO.DE.*/
+.contenedorEditor{
+	flex: 1 1 auto;
+	display: flex;
+	flex-flow: column nowrap;
+	padding: 0px;
+	margin: 0px;
+	align-items: center;
+}
+
+.contenedorTituloEditor{
+	flex: 1 1 auto;
+	display: flex;
+	flex-flow: column;
+	padding: 0px;
+	margin: 0px;
+}
+
+.tituloGeneralEditor{
+	font-size: 35px;
+	text-align: center;
+	font-weight: bold;
+	border-bottom: 2px solid rgba(61,210,255,1);
+}
+
+.contenedorFormularioEditor{
+	margin: 0px;
+	padding: 0px;
+	flex: 1 1 auto;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+
+.formularioEditor{
+	flex: 1 1 auto;
+	display: flex;
+	flex-flow: column nowrap;
+	margin: 0px;
+	padding: 0px;
+	align-items: center;
+	text-align: center;
+}
+
+.areaEntrada{
+	resize: none;
+	overflow: visible;
+	margin: 5px;
+	padding: 10px;
+	border: 1px solid rgb(145,145,145);
+	border-radius: 5px;
+	font-size: 17px;
+}
+
+.elegirEtiquetas{
+	width: 50%;
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid rgb(145,145,145);
+	border-radius: 5px;
+	font-size: 15px;
+}
+
+.etiqueta{
+	margin: 0px;
+	padding: 0px;
+	border: 1px solid rgb(145,145,145);
+	font-size: 15px;
+}
+
 /* Pie de página */
 .piePagina{
 	margin: 0px;
@@ -599,6 +669,37 @@ input[type="submit"]:hover{
 
 	.cntCategorias{
 		flex-direction: column;
+	}
+	
+	/* Vista flotante del menu lateral emergente en responsive */
+	.menuLateral{
+		padding-top: 0px;
+		padding-bottom: 0px;
+		padding-left: 0px;
+		padding-right: 0px;
+		margin: 0px;
+		width: 100%;
+		flex: 1 1 auto;
+		display: flex;
+		flex-flow: column wrap;
+		position: fixed;
+		align-items: center;
+	}
+
+	.contenedorBoton{
+		margin: 5px;
+		padding: 0px;
+		position: fixed;
+		width: 70px;
+	}
+
+	/* En la vista del editor, los componentes de entradas se ajustan */
+	.tituloEntrada{
+		width: 75%;
+	}
+
+	.areaEntrada{
+		width: 85%;
 	}
 }
 

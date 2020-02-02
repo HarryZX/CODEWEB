@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Fira+Code|Gayathri:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/menuPrincipal.css">
+	<link rel="stylesheet" href="../css/jquery-ui.css">
+	<link rel="stylesheet" href="../css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../css/jquery-ui.structure.css">
+	<link rel="stylesheet" href="../css/jquery-ui.structure.min.css">
+	<link rel="stylesheet" href="../css/jquery-ui.theme.css">
+	<link rel="stylesheet" href="../css/jquery-ui.theme.min.css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CO.DE.</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body onresize="redimensionar()">
+	<header class="cntMenu">
+		<div class="cntLogo"><a href="../index.html"><img src="../icons/CODE_logo.png"></a></div>
+		<div class="cntCat" id="menu">
+			<a href="#" id="presioname">
+				<img src="../icons/menu_icon.png" class="iconoMenu" id="iconoMenu">
+			</a>
+			<ul id="lista">
+				<li><a href="#">HTML5</a></li>
+				<li><a href="#">CSS</a></li>
+				<li><a href="#">JavaScript</a></li>
+				<li><a href="#">PHP</a></li>
+				<li><a href="#">Blog</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<!-- CONTENEDOR DEL EDITOR -->
+	<div class="contenedorEditor">
+
+		<!-- CONTENEDOR DEL TITULO -->
+		<div class="contenedorTituloEditor">
+			<p class="tituloGeneralEditor">Editor de CO.DE.</p>
+		</div>
+
+		<!-- FORMULARIO QUE CONTENDRÁ Y ENVIARÁ LOS DATOS A LA BASE DE DATOS -->
+		<div class="contenedorFormularioEditor">
+			<form action="POST" class="formularioEditor">
+				<input type="text" name="Titulo" placeholder="Titulo de la entrada" class="tituloEntrada">
+				<textarea name="Texto" cols="30" rows="10" class="areaEntrada" id="areaEntrada"></textarea>
+				<select name="seleccionar" class="elegirEtiquetas">
+					<option value="1" class="etiqueta">programación</option>
+					<option value="2" class="etiqueta">diseño web</option>
+					<option value="3" class="etiqueta">PHP</option>
+					<option value="4" class="etiqueta">JavaScript</option>
+				</select>
+				<input type="submit" class="guardarEntrada" value="Publicar">
+			</form>
+		</div>
+	</div>
+
+	<!-- PIE DE PÁGINA -->
+	<footer class="piePagina">
+		<div class="enlacesPie">
+			<ul>
+				<li><a href="#">twitter</a></li>
+				<li><a href="#">facebook</a></li>
+				<li><a href="#">instagram</a></li>
+			</ul>
+		</div>
+		<div class="enlacesPie">
+			<ul>
+				<li><a href="#">Consejos de diseño web</a></li>
+				<li><a href="#">Principios de programación</a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<!-- SCRIPTS -->
+
+	<!-- JQUERY -->
+	<script src="../js/jquery.js"></script>
+	<script src="../js/jquery-3.4.1.js"></script>
+	<script src="../js/query-ui.js"></script>
+	<script src="../js/query-ui.min.js"></script>
+	<!-- MIS SCRIPTS -->
+	<script src="../js/componentes.js"></script>
+</body>
+</html>
